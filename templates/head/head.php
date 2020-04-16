@@ -1,8 +1,8 @@
 <?php
+require_once TEMPLATES_ADDR . '/common_render.php';
+
 function get_head($title, $styles)
 {
-    $head_template = file_get_contents(TEMPLATES_ADDR . '/head/head.html');
-    $head_template= str_replace('{styles}', $styles, $head_template);
-    $head_template= str_replace('{$title}', $title, $head_template);
-    return $head_template;
+    $template = common_render('{head}', ['title' => $title], ['styles' => $styles]);
+    return $template;
 }

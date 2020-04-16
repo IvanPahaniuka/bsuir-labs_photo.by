@@ -50,6 +50,7 @@ header a:hover {
 }
 
 .more {
+    display: block;
     position: absolute;
     right: 10px;
     height: 22px;
@@ -63,13 +64,24 @@ header a:hover {
     transform: translateY(-50%);
 }
 
-.more:hover {
+input#more_check {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+input#more_check:checked~.more-menu {
+    visibility: inherit;
+}
+input#more_check:checked~.more {
     background: #333;
 
-    transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
 }
 
 .more img{
@@ -78,7 +90,7 @@ header a:hover {
 
 .more-menu{
     position: absolute;
-    /*visibility: hidden;*/
+    visibility: hidden;
     background: #222222;
     top: 100%;
     width: 100%;

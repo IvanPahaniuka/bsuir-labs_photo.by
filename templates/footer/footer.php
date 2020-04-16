@@ -1,7 +1,8 @@
 <?php
+require_once TEMPLATES_ADDR . '/common_render.php';
+
 function get_footer($year)
 {
-    $footer_template = file_get_contents(TEMPLATES_ADDR . '/footer/footer.html');
-    $footer_template= str_replace('{$year}', $year, $footer_template);
-    return $footer_template;
+    $template = common_render('{footer}', ['year' => $year]);
+    return $template;
 }

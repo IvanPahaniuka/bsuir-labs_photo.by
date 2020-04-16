@@ -1,6 +1,8 @@
 <?php
+require_once TEMPLATES_ADDR . '/common_render.php';
+
 function get_contact()
 {
-    $template = file_get_contents(TEMPLATES_ADDR . '/contact/contact.html');
+    $template = common_render('{contact}');
     return $template;
 }

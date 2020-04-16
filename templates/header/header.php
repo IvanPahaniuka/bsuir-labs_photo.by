@@ -1,6 +1,8 @@
 <?php
+require_once TEMPLATES_ADDR . '/common_render.php';
+
 function get_header()
 {
-    $template = file_get_contents(TEMPLATES_ADDR . '/header/header.html');
+    $template = common_render('{header}');
     return $template;
 }

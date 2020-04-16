@@ -1,7 +1,8 @@
 <?php
+require_once TEMPLATES_ADDR . '/common_render.php';
+
 function get_content_container($content)
 {
-    $container_template = file_get_contents(TEMPLATES_ADDR . '/content_container/content_container.html');
-    $container_template= str_replace('{$content}', $content, $container_template);
-    return $container_template;
+    $template = common_render('{content_container}', ['content' => $content]);
+    return $template;
 }
