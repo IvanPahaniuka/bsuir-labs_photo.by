@@ -1,0 +1,17 @@
+.contact-sender{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: auto;
+    width: 100%;
+    min-width: 200px;
+    max-width: 500px;
+}
+
+.contact-sender textarea{
+    height: 200px;
+    resize: none;
+}
+
+.contact-sender .button{
+    max-width: 100px;
+}

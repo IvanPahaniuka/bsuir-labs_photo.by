@@ -11,3 +11,14 @@ define('HTML_VARIABLES', [
     'SCRIPTS_ADDR' => '{$ROOT_ADDR}/scripts',
     'TEMPLATES_ADDR' => '{$ROOT_ADDR}/templates',
     ]);
+
+function database_connect(){
+    try {
+        $dbh = new PDO('mysql:dbname=photo.by_db;host=localhost', 'root', '123');
+        return $dbh;
+    }
+    catch (PDOException $e)
+    {
+        exit('Database connection error...');
+    }
+}

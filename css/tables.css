@@ -1,0 +1,28 @@
+table.table-stl {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.table-stl td, table.table-stl th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table.table-stl tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.table-stl.hoverable tr:hover {
+    background-color: #ddd;
+}
+
+table.table-stl th {
+    text-align: left;
+    background-color: #3360a5;
+    color: white;
+}
+
+table.table-stl img{
+    display: block;
+    max-width: 100%;
+}

@@ -1,0 +1,10 @@
+.photo-creator .input_img{
+    visibility: hidden;
+    max-width: 100%;
+    max-height: 200px;
+    display: block;
+}
+
+.photo-creator{
+    margin-bottom: 10px;
+}

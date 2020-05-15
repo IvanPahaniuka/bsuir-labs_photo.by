@@ -1,17 +1,39 @@
-footer{
-    text-align: center;
+footer {
+    text-align: left;
     color: gray;
-    font-size: 0.8em;
+    font-size: 0.85em;
+    width: 90%;
+    margin: 0 auto;
 }
 
-footer hr{
-    margin: 0 auto;
-    width: 90%;
+footer hr {
     border: 0;
     height: 1px;
     background: lightgray;
 }
 
-footer p{
+footer div {
     margin: 10px;
+}
+
+footer div a, footer div p {
+    display: inline;
+    margin-right: 15px;
+    white-space: nowrap;
+}
+
+footer a {
+    text-decoration: none;
+
+    color: #b9b9b9;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #66a3e6;
+
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
 }

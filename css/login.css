@@ -1,0 +1,15 @@
+.login {
+    display: block;
+    max-width: 300px;
+    min-width: 100px;
+}
+
+.login h2 {
+    margin-bottom: 10px;
+    font-size: 1.9em;
+}
+
+.login input.text {
+    margin-bottom: 10px;
+}
+

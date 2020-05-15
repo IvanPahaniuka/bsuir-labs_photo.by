@@ -1,0 +1,58 @@
+.button {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    font-size: 1.2em;
+    background-color: #3d7ecd;
+    color: white;
+    border: 1px solid #3d7ecd;
+    border-radius: 0px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #3360a5;
+
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.button:focus {
+    border: 1px solid #3360a5;
+
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.text {
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    width: 100%;
+    outline: none;
+    font-size: 1.2em;
+    padding: 6px;
+    text-decoration: none;
+    text-align: inherit;
+}
+
+.text:focus {
+    border: 1px solid #3360a5;
+
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.err_text{
+    color: red;
+}
+
